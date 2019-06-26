@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title></title>
+</head>
+<body>
+	<form name="myform" action="/Plus/UserLogin.aspx" method="post" id="Form1">
+                            <input type="hidden" name="action" value="checklogin">
+                            <input type="hidden" name="backurl" value="/school/118073">
+                            <input type="hidden" name="schoolid" value="118073">
+                            <ul>
+                                <li style="margin-top:0px;">
+                                    <input type="input" onFocus="this.value=(this.value=='用户名/UID/手机号码/电子邮箱')?'':this.value" onBlur="this.value=(this.value=='')?'用户名/UID/手机号码/电子邮箱':this.value" name="UserName" value="用户名/UID/手机号码/电子邮箱" id="UserName" class="username">
+                                </li>
+                                <li>
+                                    <input type="password" onFocus="this.value=(this.value=='******')?'':this.value" onBlur="this.value=(this.value=='')?'******':this.value" name="passWord" value="******" id="passWord" class="password">
+                                </li>
+                                <li>
+                                    <span style="display:none"><input type="input" onFocus="this.value=(this.value=='验证码')?'':this.value" onBlur="this.value=(this.value=='')?'验证码':this.value" name="VerifyCode" value="验证码" id="TxtVerifyCode" class="password" style="width:60px"> <img title="点击刷新" id="verifyimg" src="../plus/ValidateCode.aspx" border="0" style="cursor:pointer;margin-top:10px" onClick="this.src='../plus/ValidateCode.aspx?t='+Math.random();"></span>
+                                </li>
+                                <li>
+                                    <div class="cook">
+                                        <div class="fl"><input id="Cookies" type="checkbox" name="Cookies" style="outline:none;vertical-align:middle" checked="checked"> <label for="Cookies">&nbsp;记住我的登录信息</label></div><div class="fr">
+                                            <a href="/school/118073?control-getpassword">忘记密码？</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <input name="Button1" value="立即登录" class="btn-login" onClick="return(CheckLoginForm())" type="submit">
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+
+                        </form>
+
+
+</body>
+</html>
